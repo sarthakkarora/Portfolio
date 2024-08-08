@@ -124,11 +124,6 @@ body.light-mode h2 {
 }
 
 
-  div.skill tag,
-  div.skill chip {
-    font-size: 1.05rem;
-    margin: 2px;
-  }
   
   .no-dec:hover {
     text-decoration: none;
@@ -227,7 +222,6 @@ li {
 
 div.skill {
     display: inline-block;
-    padding: 0;
 }
 
 .skill-list {
@@ -237,7 +231,7 @@ div.skill {
     background-color: #1c1b1f;
     border-radius: 16px;
     cursor: pointer;
-    justify-content: center;
+  
 }
 
 div.skill tag,
@@ -282,4 +276,17 @@ element.style {
 
 .h-28 {
   height: 7rem;
+}
+
+
+.prog-languages {
+  display: block;
+  margin-inline-start: 190px;
+  max-width: 100%;
+}
+
+.tools {
+  display: block;
+  margin-inline-start: 60px;
+  max-width: 100%;
 }
