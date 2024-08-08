@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap");
+
+
+.content {
+ display: flex;
+ flex-direction: column;
+ flex: 1 auto;
+ align-items: center;
+ justify-content: center;
+ margin: 50px 0;
+ color: white;
+}
+
+
+.content div {
+ padding: 20px;
+}
+
+
+.content h1,
+.content p,
+.content a {
+ animation: content-load 0.2s ease-in var(--article-load-delay);
+ animation-fill-mode: forwards;
+ transform: translateY(-20px);
+ opacity: 0;
+}
+.cli {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: monospace, monospace;
+    padding: 8px 16px;
+    background: black;
+    color: rgb(3, 255, 3);
+    border-radius: 16px;
+    margin-right: 5px;
+}
+
+.logo__cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1rem;
+    background: #fe5186;
+    margin-left: 5px;
+    border-radius: 1px;
+    animation: blinker 1s ease infinite;
+}
+
+.chip-list {
+ margin: 8px;
+ animation: content-load 0.2s ease-in var(--article-load-delay);
+ animation-fill-mode: forwards;
+ transform: translateY(-20px);
+ opacity: 0;
+}
+
+
+.chip {
+ display: inline-block;
+ width: fit-content;
+ margin: 4px;
+ margin-left: auto;
+ margin-right: auto;
+ padding: 8px;
+ border: #353535 1px solid;
+ background-color: #1c1b1f;
+ color: #e6e1e5;
+ border-radius: 8px;
+ cursor: pointer;
+ transition: all 0.2s ease-in;
+ animation: content-load 0.2s ease-in var(--article-load-delay);
+ animation-fill-mode: forwards;
+ transform: translateY(-20px);
+ opacity: 0;
+ text-decoration: none;
+}
+
+
+.chip:hover {
+ border-radius: 4px;
+ border: #353535 1px solid;
+ background-color: #252527;
+}
+
+
+.connect {
+ transition: all 0s ease-in;
+}
+
+
+
+.connect:hover {
+ color: rgb(251, 255, 0);
+}
+
+.avatar-container {
+    border: 5px solid rgb(251, 251, 251);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 20px auto;
+  }
+  
+  .avatar-image {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .connect:hover svg {
+    fill: rgb(251, 255, 0);
+  }
+  
+  .connect:hover svg {
+    color: rgb(251, 255, 0);
+  }
+  
+  .avatar-container {
+    border: 5px solid rgb(251, 251, 251);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 20px auto;
+  }
+  
+  .avatar-image {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .dark-mode .avatar-container.dark-mode-border {
+    border-color: black;
+  }
+  
+
+ 
+
+
+body.dark-mode .connect svg {
+  fill: #000000; 
+}
