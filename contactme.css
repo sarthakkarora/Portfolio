@@ -1,0 +1,191 @@
+
+
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+.signup-content-container {
+  background-color: rgba(12, 22, 45, 0.8);
+  border: 2px solid #202637;
+  border-radius: 6px;
+  box-shadow: 0 1px 0 rgba(31, 35, 40, 0.04);
+  color: #1f2328;
+  height: auto;
+  line-height: 24px;
+  box-sizing: border-box;
+  padding: 24px;
+  width: 606px;
+  margin-top: 150px;
+  margin-bottom: 180px;
+  margin-left: 90px;
+
+
+}
+
+.signup-content {
+  box-sizing: border-box;
+  color: #8193b2;
+  display: inline;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 17px;
+  height: auto;
+  line-height: 24px;
+  overflow-wrap: break-word;
+  width: auto;
+}
+
+h2 {
+  color: rgb(0, 207, 200);
+  color-scheme: light;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.step {
+  transition: all 0.5s ease;
+}
+
+.step.hidden {
+  display: none;
+  transform: translateY(-100%);
+}
+
+.step.show {
+  display: block;
+  transform: translateY(0%);
+}
+
+
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.input-container input[type="email"],
+.input-container input[type="text"],
+.input-container textarea {
+  flex: 1;
+  margin-right: 10px;
+
+}
+
+.input-container button {
+  margin-left: 10px;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  margin-top: -5px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 12px solid rgb(219, 95, 253);
+  margin-right: 10px;
+}
+
+
+
+
+#email,
+#username,
+#message {
+  background-color: rgba(11, 20, 42, 0.7);
+  color-scheme: light;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+  color: rgba(141, 141, 141, 0.7);
+}
+
+#email:hover,
+#email:focus,
+#username:hover,
+#username:focus,
+#message:hover,
+#message:focus {
+  border: 2px solid #00ff00;
+}
+
+@keyframes buttonAnimation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes buttonAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+button {
+  transition: all 0.3s ease;
+  background-color: rgba(11, 20, 42, 0.7);
+  color: rgba(11, 20, 42, 0.7);
+  border: 2px solid rgba(11, 20, 42, 0.7);
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color-scheme: light;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button:active {
+  animation: buttonAnimation 0.6s ease;
+}
+
+.error-message {
+  color: #ff0000; 
+  font-size: 0.9em;
+  margin-top: 5px;
+  display: block;
+}
