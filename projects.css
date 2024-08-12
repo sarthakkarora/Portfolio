@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap");
+
+body {
+  color: white;
+}
+
+.project_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.project {
+  text-align: center;
+  display: inline-block;
+  width: 360px; 
+  margin: 8px;
+  padding: 16px;
+  border: #353535 1px solid;
+  background-color: #1c1b1f;
+  color: #e6e1e5;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  vertical-align: middle;
+  z-index: 1;
+
+}
+
+.project .project_image {
+  border-radius: 16px;
+  width: 400px; 
+  height: 300px; 
+  object-fit: cover; 
+}
+
+
+.project tag_list {
+  margin: 0;
+}
+
+.project .tag {
+  display: inline-block;
+  background-color: #a8c8ff;
+  color: #003061;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 8px;
+  margin: 2px;
+}
+
+.project .download {
+  display: inline-block;
+  background-color: #9ff7b8;
+  color: #014012;
+  font-weight: 600;
+  padding: 8px;
+  border-radius: 16px;
+  margin: 4px;
+}
+
+.project .download:hover,
+.project .source-link:hover {
+  border-radius: 12px;
+}
+
+.project .tag:hover,
+.project .year:hover {
+  border-radius: 8px;
+  scale: 1.05;
+}
+
+.project .title {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 1.5rem;
+  margin: 4px;
+}
+
+.project .year {
+  font-family: "Poppins", sans-serif;
+  text-align: right;
+  width: fit-content;
+  margin: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  color: #e6e1e5;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 auto;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+  color: white;
+}
+
+.modal {
+  color: black;
+}
+
+b {
+  font-family: "Poppins";
+}
+
+.project .source-link {
+  display: inline-block;
+  background-color: #f7e89f;
+  color: #403701;
+  font-weight: 600;
+  padding: 8px;
+  border-radius: 16px;
+  margin: 4px;
+}
+
+.project .source-link i,
+.project .download i {
+  font-size: larger;
+  vertical-align: middle;
+}
+
+.project:hover {
+  border-radius: 28px;
+  scale: 1.005;
+  background-color: #242326;
+
+}
+

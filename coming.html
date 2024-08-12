@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: "Press Start 2P", sans-serif;
+      src: url("Ambient.ttf");
+    }
+
+    body {
+      background-color: black;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: filter 0.5s;
+    }
+    #comingSoon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        text-align: center;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 12px;
+        font-family: "Press Start 2P", sans-serif;
+        text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+      }
+
+      p{
+        font-size: 25px;
+        color: #fbf9f9;
+        text-transform: uppercase;
+        line-height: 140%;
+        text-shadow: 0 0 10px rgb(0, 8, 255); /* Glowing effect */
+      }
+
+      h1{
+        color: #fbf9f9;
+        text-transform: uppercase;
+        line-height: 140%;
+        text-shadow: 0 0 10px rgb(255, 0, 0); /* Glowing effect */
+      }
+
+      @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      
+
+    
+     #comingSoon p {
+        animation: blink 3s infinite; 
+      }
+    
+     
+      
+    #entryButton {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 23px;
+      font-family: "Press Start 2P", sans-serif;
+      text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(10px);
+      cursor: pointer;
+    }
+
+    #content {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <p id="entryButton" class="enter">Click To Enter</p>
+  </div>
+
+  <div id="content">
+    <div id="comingSoon">
+      <h1> EVERYTHING IS ON THE BRINK OF <br> <br>TRANSFORMATION</h1>
+      <BR><BR><BR><BR><BR>
+      <p> <**| COMING SOON |**> </p>
+      <BR><BR><BR>
+    </div>
+    <!-- audio player for bg music -->
+    <audio id="audio" controls autoplay loop style="display: none">
+      <source src="skidee.xyz.mp3" type="audio/mp3" />
+      Your browser does not support the audio tag.
+    </audio>
+  </div>
+
+  <!-- js for interactions, animations -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      var audio = document.getElementById("audio");
+
+      // func to hide the entry button and show content
+      function showContent() {
+        var entryButton = document.getElementById("entryButton");
+        var content = document.getElementById("content");
+
+        // hide entry button
+        entryButton.style.opacity = 0;
+        entryButton.style.pointerEvents = "none";
+
+        // Delay before hiding entry button and displaying content
+        setTimeout(function () {
+          entryButton.style.display = "none";
+          content.style.display = "block";
+
+          // bg music
+          audio.play();
+
+          document.body.style.overflow = "auto";
+        }, 500);
+      }
+
+      // entry button event listener 
+      document
+        .getElementById("entryButton")
+        .addEventListener("click", showContent);
+
+      // adding blur class to the body when the page loads
+      document.body.classList.add("blur");
+    });
+  </script>
+</body>
+
+</html>
