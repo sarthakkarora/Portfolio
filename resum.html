@@ -1,15 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="view.css"></link>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sarthak resume</title>
+    <title>Sarthak Resume</title>
+    <link rel="stylesheet" href="view.css" />
+
+  <link rel="icon" type="image/png" href="fevi.png">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #000; 
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .container {
+        padding: 30px;
+        background-color: #000000;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        width: 700px; 
+        height: 700px; 
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .container:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 12px;
+        transition: transform 0.3s;
+      }
+      iframe:hover {
+        transform: scale(1.02);
+      }
+      @media (max-width: 768px) {
+        .container {
+          width: 90%;
+          height: 400px;
+          padding: 15px;
+        }
+        iframe {
+          height: 100%;
+        }
+      }
+      @media (max-width: 480px) {
+        .container {
+          width: 100%;
+          height: 300px;
+          padding: 10px;
+        }
+        iframe {
+          height: 100%;
+        }
+      }
+    </style>
   </head>
-  <style type width="100%" ></style>
-  <iframe src="" width="640" height="480" allow="autoplay"></iframe>
-  
-   
-    
+  <body>
+    <div class="container">
+      <iframe
+        src="https://drive.google.com/file/d/1d2GV8F-3IqawLTE0p05YF1ckqGmoYRPO/preview"
+        allow="autoplay"
+      ></iframe>
+    </div>
   </body>
 </html>
