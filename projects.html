@@ -1,166 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
 
-
-    <style>body {
+  <style>
+    body {
       transition: background-color 0.5s ease;
-      background-color: #000000; /* Dark mode background color */
-      color: #fff; 
-  }
-  /* Light mode styles */
-body.light-mode {
-  background-color: #ffffff; /* Light background color */
-  color: #000000; /* Dark text color */
-}
+      background-color: #000000; 
+      color: #fff;
+    }
 
-body.light-mode .project {
-  border: #e0e0e0 1px solid;
-  background-color: #f5f5f5;
-  color: #000000;
-}
+   
+    body.light-mode {
+      background-color: #ffffff; 
+      color: #000000;
+    }
 
-body.light-mode .project .project_image {
-  border-radius: 16px;
-  width: 400px;
-  height: 300px;
-  object-fit: cover;
-}
+    body.light-mode .project {
+      border: #e0e0e0 1px solid;
+      background-color: #f5f5f5;
+      color: #000000;
+    }
 
-body.light-mode .project .tag {
-  display: inline-block;
-  background-color: #d0d0d0;
-  color: #000000;
-}
+    body.light-mode .project .project_image {
+      border-radius: 16px;
+      width: 400px;
+      height: 300px;
+      object-fit: cover;
+    }
 
-body.light-mode .project .download {
-  display: inline-block;
-  background-color: #c0e0c0;
-  color: #000000;
-}
+    body.light-mode .project .tag {
+      display: inline-block;
+      background-color: #d0d0d0;
+      color: #000000;
+    }
 
-body.light-mode .project .source-link {
-  display: inline-block;
-  background-color: #e0e0e0;
-  color: #000000;
-}
+    body.light-mode .project .download {
+      display: inline-block;
+      background-color: #c0e0c0;
+      color: #000000;
+    }
 
-body.light-mode .project:hover {
-  border-radius: 28px;
-  scale: 1.005;
-  background-color: #e0e0e0;
-}
+    body.light-mode .project .source-link {
+      display: inline-block;
+      background-color: #e0e0e0;
+      color: #000000;
+    }
 
-.title {
-  color: white; /* Dark mode text color */
-}
+    body.light-mode .project:hover {
+      border-radius: 28px;
+      scale: 1.005;
+      background-color: #e0e0e0;
+    }
 
-/* Light mode styles */
-body.light-mode {
-  background-color: #ffffff;
-  color: #000000;
-}
+    .title {
+      color: white;
+    }
 
-body.light-mode .title {
-  color: #000000; /* Light mode text color */
-}
-
-
- 
+    body.light-mode .title {
+      color: #000000;
+    }
   </style>
-  
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C289TM2PFJ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-  
-      gtag("config", "G-C289TM2PFJ");
-    </script>
-  
-    <!--meta-->
-    <meta name="author" content="Sarthak Arora" />
-    <meta name="description" content="A budding developer with a passion for web and software development." />
-    <meta content="Sarthak Arora" property="og:title" />
-    <meta content="A budding developer with a passion for web and software development." property="og:description" />
-    <meta property="og:url" content="./" />
-    <meta property="og:type" content="website" />
-    <meta content="https://avatars0.githubusercontent.com/u/90165751?s=460&amp;v=4" property="og:image" />
-    <meta itemprop="name" content="Sarthak Arora" />
-    <meta itemprop="description" content="Sarthak Arora" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Sarthak Arora" />
-    <meta name="twitter:description" content="Sarthak Arora" />
-    <meta name="theme-color" content="#212020" />
-  
-    <script src="./service-worker.js" type="text/javascript"></script>
-    <script src="./projects.js" type="text/javascript"></script>
-    <script type="text/javascript" src="./script.js"></script>
-  
 
-    <link rel="stylesheet" href="./projects.css" />
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./view.css" />
-  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C289TM2PFJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-    <header>
-      <link rel="stylesheet" href="index.css" />
-      <nav>
-        <ul class="nav-bar">
-          <a href="resume.html" style="text-decoration: none">
-            <div class="cli">
-              <span class="logo_mark">  </span>
-              <span class="logo_text">$ cd /home</span>
-              <span class="logo_cursor">></span>
-            </div>
-          </a>
-          <span class="menu">
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html"> Projects</a></li>
-            <li><a href="resum.html">Resume</a></li>
-            <li><a href="contactme.html">Contact Me</a></li>
-            <li><a href="#" id="toggleMode"> Light Mode 🌞</a></li>
-          </span>
-        </ul>
-      </nav>
-    </header>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    <script src="./projects.js"></script>
+    gtag("config", "G-C289TM2PFJ");
+  </script>
 
-    
+  <meta name="author" content="Sarthak Arora" />
+  <meta name="description" content="A budding developer with a passion for web and software development." />
+  <meta content="Sarthak Arora" property="og:title" />
+  <meta content="A budding developer with a passion for web and software development." property="og:description" />
+  <meta property="og:url" content="./" />
+  <meta property="og:type" content="website" />
+  <meta content="https://avatars0.githubusercontent.com/u/90165751?s=460&amp;v=4" property="og:image" />
+  <meta itemprop="name" content="Sarthak Arora" />
+  <meta itemprop="description" content="Sarthak Arora" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Sarthak Arora" />
+  <meta name="twitter:description" content="Sarthak Arora" />
+  <meta name="theme-color" content="#212020" />
 
+  <script src="./service-worker.js" type="text/javascript"></script>
+  <script src="./projects.js" type="text/javascript"></script>
+  <script type="text/javascript" src="./script.js"></script>
 
-    <!--Title Icon-->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/title/apple-touch-icon.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/title/favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/title/favicon-16x16.png" />
-    <link rel="manifest" href="./site.webmanifest" />
-    <link rel="icon" type="image/png" href="fevi.png">
+  <link rel="stylesheet" href="./projects.css" />
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="./view.css" />
 
-    <!--Google Fonts + Icons-->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet" />
-  </head>
+  <link rel="icon" type="image/png" href="fevi.png">
+
+  <header>
+    <link rel="stylesheet" href="index.css" />
+    <nav>
+      <ul class="nav-bar">
+        <a href="resume.html" style="text-decoration: none">
+          <div class="cli">
+            <span class="logo_mark"> </span>
+            <span class="logo_text">$ cd /home</span>
+            <span class="logo_cursor">></span>
+          </div>
+        </a>
+        <span class="menu">
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html"> Projects</a></li>
+          <li><a href="resum.html">Resume</a></li>
+          <li><a href="contactme.html">Contact Me</a></li>
+          <li><a href="#" id="toggleMode"> Light Mode 🌞</a></li>
+        </span>
+      </ul>
+    </nav>
+  </header>
+
+  <script src="./projects.js"></script>
+
+  <!--Title Icon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/title/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/title/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/title/favicon-16x16.png" />
+  <link rel="manifest" href="./site.webmanifest" />
+  <link rel="icon" type="image/png" href="fevi.png">
+
+  <!--Google Fonts + Icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
   <body class>
     <script src="./projects.js"></script>
     <script src="./index.js"></script>
